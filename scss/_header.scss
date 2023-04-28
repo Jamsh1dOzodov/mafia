@@ -1,0 +1,85 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 11px;
+
+    // .header-logo
+    &-logo {
+
+        // .logo__text
+        &__text {
+            font-size: 14px;
+            font-family: 'Avenir';
+            font-weight: 400;
+            line-height: 19px;
+            color: #705658;
+            text-align: center;
+        }
+    }
+
+    // .header-col
+    // &-col {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    // }
+
+    // .header-form
+    &-form {
+        position: relative;
+    }
+
+    // .header-form__input
+    &__input {
+        width: 555px;
+        padding: 16px 20px;
+        border: 1px solid #B7BCC0;
+        border-radius: 3px;
+
+    }
+
+    // .header-form__btn
+    &__btn {
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        background-color: transparent;
+        border: none;
+        width: 17px;
+        height: 18px;
+    }
+
+    // .header-list
+    &-list {
+
+        // .header-list__link
+        &__link {
+            color: #12212D;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        // .header-list__triangle
+        &__triangle {
+            align-items: center;
+            margin-left: 6px;
+        }
+
+        // .header-list__item
+        &__item {
+            position: relative;
+            &:first-child{
+                padding-right: 41px;
+                &::after {
+                    position: absolute;
+                    top: -9px;
+                    right: 21px;
+                    content: "";
+                    width: 1px;
+                    height: 40px;
+                    background-color: #B7BCC0;
+                }
+            }
+        }
+    }
+}
