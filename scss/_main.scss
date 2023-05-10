@@ -52,6 +52,15 @@
 
     .purchase{
         margin-bottom: 51px;
+        .col{
+            width: 40%;
+            flex: 40%;
+            // .col--big
+            &--big{
+                width: 60%;
+                flex: 60%;
+            }
+        }
         // .purchase-header
         &-header{
 
@@ -209,6 +218,16 @@
             &__p{
                 margin-top: 28px;
             }
+        }
+        // .purchase-price
+        &-price{
+            display: flex;
+            align-items: center;
+        }
+        // .purchase-button
+        &-button{
+            display: flex;
+            align-items: center;
         }
     }
 

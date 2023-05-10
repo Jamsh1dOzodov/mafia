@@ -87,45 +87,58 @@
         </div>
 
         <div class="purchase">
-            <div class="container wrapper">
-                <div class="purchase-header">
-                    <div class="purchase-header__img">
-                        <img src="./img/BIGMask.svg" alt="Таблица">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="col">
+                        <div class="purchase-header">
+                        <div class="purchase-header__img">
+                            <img src="./img/BIGMask.svg" alt="Таблица">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images--first" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images--second" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images-third" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                            <button type="button" class="purchase-header__btn"><img src="./img/arrow.svg" alt="Стрелка"></button>
+                        </div>
                     </div>
-                    <img class="purchase-header__images purchase-header__images--first" src="./img/Mask.svg" alt="Табличка">
-                    <img class="purchase-header__images purchase-header__images--second" src="./img/Mask.svg" alt="Табличка">
-                    <img class="purchase-header__images purchase-header__images-third" src="./img/Mask.svg" alt="Табличка">
-                    <button type="button" class="purchase-header__btn"><img src="./img/arrow.svg" alt="Стрелка"></button>
-                </div>
-
-                <div>
-                    <div class="purchase-buy">
-                        <h3 class="purchase-buy__h3">Цена</h3>
-                        <h3 class="purchase-buy__price">590 ₽</h3>
-
-                        <div class="purchase-amount">
-                            <button type="button" class="purchase-amount__minus">-</button>
-                            <input class="purchase-amount__number" type="number">
-                            <span class="purchase-amount__text">шт.</span>
-                            <button type="button" class="purchase-amount__plus">+</button>
+                    <div class="col col--big">
+                        <div class="purchase-main">
+                        <div class="purchase-buy">
+                            <div class="purchase-price">
+                                <h3 class="purchase-buy__h3">Цена</h3>
+                                <h3 class="purchase-buy__price">590 ₽</h3>
+                            </div>
+                            <div class="purchase-amount">
+                                <button type="button" class="purchase-amount__btn purchase-amount__minus">-</button>
+                                <input class="purchase-amount__number" type="number" value="5">
+                                <span class="purchase-amount__text">шт.</span>
+                                <button type="button" class="purchase-amount__btn purchase-amount__plus">+</button>
+                            </div>
+                            <div class="purchase-button">
+                                <button type="submit" class="purchase-buy__btn">Купить</button>
+                                <p class="purchase-buy__text">Заканчивается</p>
+                            </div>
                         </div>
 
-                        <button type="submit" class="purchase-buy__btn">Купить</button>
-                        <p class="purchase-buy__text">Заканчивается</p>
-                    </div>
-
-                    <div class="purchase-description">
-                        <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
-                        <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
-                        <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
-                        <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
-                        <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
-                        <p class="purchase-description__cat purchase-description__cat--apt">Арт. U303303303</p>
-                        <p class="purchase-description__cat">Категория <u>Таблички</u></p>
-                        <div class="purchase-description__p">
-                            <p class="purchase-description__text">Таблички для фотосессий на игре мафия. Материал – ПВХ. Размер 20*30 см. Различные варианты текста.</p>
-                            <p class="purchase-description__text">Golden Mafia – качественный реквизит для игры в мафию.</p>
-                            <p class="purchase-description__text">Сделано в России.</p>
+                        <div class="purchase-description">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <p class="purchase-description__cat purchase-description__cat--apt">Арт. U303303303</p>
+                            <p class="purchase-description__cat">Категория <u>Таблички</u></p>
+                            <div class="purchase-description__p">
+                                <p class="purchase-description__text">Таблички для фотосессий на игре мафия. Материал – ПВХ. Размер 20*30 см. Различные варианты текста.</p>
+                                <p class="purchase-description__text">Golden Mafia – качественный реквизит для игры в мафию.</p>
+                                <p class="purchase-description__text">Сделано в России.</p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -314,6 +327,8 @@
     </footer>
 
 
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

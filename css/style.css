@@ -294,6 +294,18 @@ body {
 .main .purchase {
   margin-bottom: 51px;
 }
+.main .purchase .col {
+  width: 40%;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+.main .purchase .col--big {
+  width: 60%;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
 .main .purchase-header__img {
   padding: 0 0 44px 55px;
   position: relative;
@@ -417,6 +429,22 @@ body {
 }
 .main .purchase-description__p {
   margin-top: 28px;
+}
+.main .purchase-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .purchase-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main .description-list {
   display: -webkit-box;
