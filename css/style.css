@@ -248,6 +248,9 @@ body {
   margin-left: 26px;
 }
 
+.main {
+  background-color: #F9F9F9;
+}
 .main .wrapper {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -378,20 +381,26 @@ body {
   line-height: 19px;
   margin-left: 47px;
 }
-.main .purchase-amount__minus {
+.main .purchase-amount__btn--minus {
   padding: 6px 12px 5px 13px;
   border: 1px solid #B7BCC0;
   background-color: transparent;
   border-radius: 2px;
   margin-right: 17px;
 }
-.main .purchase-amount__number {
+.main .purchase-amount__btn--plus {
+  padding: 6px 10px 5px 10px;
+  border: 1px solid #B7BCC0;
+  background-color: transparent;
+  border-radius: 2px;
+}
+.main .purchase-amount__count {
   width: 20px;
   height: 25px;
   border: none;
   outline: none;
 }
-.main .purchase-amount__number::-webkit-outer-spin-button, .main .purchase-amount__number::-webkit-inner-spin-button {
+.main .purchase-amount__count::-webkit-outer-spin-button, .main .purchase-amount__count::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -400,12 +409,6 @@ body {
   font-size: 14px;
   line-height: 19px;
   margin-right: 18px;
-}
-.main .purchase-amount__plus {
-  padding: 6px 10px 5px 10px;
-  border: 1px solid #B7BCC0;
-  background-color: transparent;
-  border-radius: 2px;
 }
 .main .purchase-description {
   margin-top: 28px;
@@ -657,4 +660,42 @@ body {
   line-height: 19px;
   padding: 18px 89px 17px 89px;
   width: 70%;
+}
+.main .basket .cart-table {
+  padding: 30px 30px 0 30px;
+}
+.main .basket .cart-table__list .list__title {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 12px;
+  line-height: 16px;
+}
+.main .basket .cart-table__list .list__text {
+  color: #12212D;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.main .basket .cart-table__list .list__price {
+  color: #12212D;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.main .basket .cart-table__list .list__sum {
+  color: #12212D;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.main .basket .cart-table__list .list--border {
+  position: relative;
+}
+.main .basket .cart-table__list .list--border ::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #B7BCC0;
+  top: 20px;
+  left: 0;
 }

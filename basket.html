@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+
+                <div class="header-logo">
+                    <img class="header-logo__img" src="./img/logo.svg" alt="Логотип">
+                    <p class="header-logo__text">Тут должен быть слоган</p>
+                </div>
+
+                <!-- <div class="header-col"> -->
+                    <form class="header-form" action="">
+                        <input class="header__input" type="search" placeholder="Поиск товаров">
+                        <button class="header__btn" type="submit"><img src="./img/research_icon.svg" alt="Лупа"></button>
+                    </form>
+                    <ul class="header-list wrapper">
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="tel:+80647652334">8 (064)765-23-34</a>
+                            <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                        </li>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="#">Вход / Регистрация</a>
+                            <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                        </li>
+                    </ul>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <nav class="nav">
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="nav-list">
+                        <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="#">Все товары</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Скидки и акции</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О мафии</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Доставка и оплата</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+                    </ul>
+                        
+                    <div class="nav-cart">
+                        <div class="col">
+                            <div class="nav-cart__logo">
+                                <a href="#"><img src="./img/cart.svg" alt="Корзина"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="nav-cart__name">Корзина</p>
+                            <h3 class="nav-cart__price">144 323 руб.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="basket">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-list__item breadcrumbs-list__item--dot"><a class="breadcrumbs-list__link" href="/">Главная страница</a></li>
+                        <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link breadcrumbs-list__link--light" href="#">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="main__title">Корзина</h1>
+            </div>
+
+            <div class="cart">
+                <div class="container">
+                    <table class="cart-table">
+                        <thead class="cart-table__head">
+                            <tr class="cart-table__list list">
+                                <th class="list__title">Фото</th>
+                                <th class="list__title">Наименование</th>
+                                <th class="list__title">Количество</th>
+                                <th class="list__title">Цена</th>
+                                <th class="list__title">Сумма</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="cart-table__body">
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

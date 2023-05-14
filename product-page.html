@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+
+                <div class="header-logo">
+                    <img class="header-logo__img" src="./img/logo.svg" alt="Логотип">
+                    <p class="header-logo__text">Тут должен быть слоган</p>
+                </div>
+
+                <!-- <div class="header-col"> -->
+                    <form class="header-form" action="">
+                        <input class="header__input" type="search" placeholder="Поиск товаров">
+                        <button class="header__btn" type="submit"><img src="./img/research_icon.svg" alt="Лупа"></button>
+                    </form>
+                    <ul class="header-list wrapper">
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="tel:+80647652334">8 (064)765-23-34</a>
+                            <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                        </li>
+                        <li class="header-list__item">
+                            <a class="header-list__link" href="#">Вход / Регистрация</a>
+                            <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                        </li>
+                    </ul>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <nav class="nav">
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="nav-list">
+                        <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="#">Все товары</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Скидки и акции</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О мафии</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Доставка и оплата</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+                    </ul>
+                        
+                    <div class="nav-cart">
+                        <div class="col">
+                            <div class="nav-cart__logo">
+                                <a href="#"><img src="./img/cart.svg" alt="Корзина"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="nav-cart__name">Корзина</p>
+                            <h3 class="nav-cart__price">144 323 руб.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-list__item breadcrumbs-list__item--dot"><a class="breadcrumbs-list__link" href="#">Главная страница</a></li>
+                    <li class="breadcrumbs-list__item breadcrumbs-list__item--dot"><a class="breadcrumbs-list__link" href="#">Таблички</a></li>
+                    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link breadcrumbs-list__link--light" href="#">Табличка для фотосессий</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="main__title">Табличка для фотосессий</h1>
+        </div>
+
+        <div class="purchase">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="col">
+                        <div class="purchase-header">
+                        <div class="purchase-header__img">
+                            <img src="./img/BIGMask.svg" alt="Таблица">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images--first" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images--second" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                        <div>
+                            <img class="purchase-header__images purchase-header__images-third" src="./img/Mask.svg" alt="Табличка">
+                        </div>
+                            <button type="button" class="purchase-header__btn"><img src="./img/arrow.svg" alt="Стрелка"></button>
+                        </div>
+                    </div>
+                    <div class="col col--big">
+                        <div class="purchase-main">
+                        <div class="purchase-buy">
+                            <div class="purchase-price">
+                                <h3 class="purchase-buy__h3">Цена</h3>
+                                <h3 class="purchase-buy__price">590 ₽</h3>
+                            </div>
+                            <div class="purchase-amount">
+                                <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                <input class="purchase-amount__count" type="number" value="5">
+                                <span class="purchase-amount__text">шт.</span>
+                                <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                            </div>
+                            <div class="purchase-button">
+                                <button type="submit" class="purchase-buy__btn">Купить</button>
+                                <p class="purchase-buy__text">Заканчивается</p>
+                            </div>
+                        </div>
+
+                        <div class="purchase-description">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="purchase-descriotion__rating" src="./img/star.svg" alt="Звездочка">
+                            <p class="purchase-description__cat purchase-description__cat--apt">Арт. U303303303</p>
+                            <p class="purchase-description__cat">Категория <u>Таблички</u></p>
+                            <div class="purchase-description__p">
+                                <p class="purchase-description__text">Таблички для фотосессий на игре мафия. Материал – ПВХ. Размер 20*30 см. Различные варианты текста.</p>
+                                <p class="purchase-description__text">Golden Mafia – качественный реквизит для игры в мафию.</p>
+                                <p class="purchase-description__text">Сделано в России.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <div class="container">
+                <ul class="description-list">
+                    <li class="description-list__item description-list__item--active"><a class="description-list__link" href="#">Описание</a></li>
+                    <li class="description-list__item"><a class="description-list__link" href="#">Отзывы(18)</a></li>
+                </ul>
+                <h3 class="description__title">Табличка для фотосессий</h3>
+                <p class="description__text">Таблички для фотосессий на игре мафия. Материал – ПВХ. Размер 20*30 см. Различные варианты текста.</p>
+                <span>Golden Mafia – качественный реквизит для игры в мафию. Сделано в России.</span>
+            </div>
+
+            <div class="simproducts">
+                <div class="container">
+                    <h3 class="simproducts__title">Похожие товары</h3>
+                    <div class="wrapper">
+                        <div class="card card--first">
+                            <div><span class="card__description">В наличии</span></div>
+                            <div class="card-header"><img src="./img/numbers.svg" alt="Номерки"></div>
+                            <div class="card-body"><p>Номерки для игры мафия «Сицилия»</p></div>
+                            <div class="card-footer">
+                                <h4 class="card-footer__h4">Цена</h4>
+                                <h4 class="card-footer__price">590 ₽</h4>
+                                <button class="card-footer__btn" type="button">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div><span class="card__description">В наличии</span></div>
+                            <div class="card-header"><img src="./img/Maskchicago.svg" alt="Номерки"></div>
+                            <div class="card-body"><p>Маска для мафии «Чикаго»»</p></div>
+                            <div class="card-footer">
+                                <h4 class="card-footer__h4">Цена</h4>
+                                <h4 class="card-footer__price">590 ₽</h4>
+                                <button class="card-footer__btn" type="button">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div><span class="card__description">В наличии</span></div>
+                            <div class="card-header"><img src="./img/numbers.svg" alt="Номерки"></div>
+                            <div class="card-body"><p>Номерки для игры мафия «Сицилия»</p></div>
+                            <div class="card-footer">
+                                <h4 class="card-footer__h4">Цена</h4>
+                                <h4 class="card-footer__price">590 ₽</h4>
+                                <button class="card-footer__btn" type="button">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class=" card card--last">
+                            <div><span class="card__description">В наличии</span></div>
+                            <div class="card-header"><img src="./img/Maskchicago.svg" alt="Номерки"></div>
+                            <div class="card-body"><p>Маска для мафии «Чикаго»</p></div>
+                            <div class="card-footer">
+                                <h4 class="card-footer__h4">Цена</h4>
+                                <h4 class="card-footer__price">590 ₽</h4>
+                                <button class="card-footer__btn" type="button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simproducts-btn">
+                        <button class="simproducts-btn__left"><img src="./img/arrowLEFT.svg" alt="Стрелка"></button>
+                        <button class="simproducts-btn__right"><img src="./img/arrow.svg" alt="Стрелка"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <div class="comments">
+            <div class="container wrapper">
+                <div class="comment">
+                    <div>
+                        <div class="comment-first">
+                            <h3 class="comment-first__name">Гость</h3>
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                        </div>
+                        <p class="comment__text">Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                    </div>
+
+                    <div>
+                        <div class="comment-first">
+                            <h3 class="comment-first__name">Вадим</h3>
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                            <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
+                        </div>
+                        <p class="comment__text">Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                    </div>
+
+                    <button class="comment__more" type="button">Показать еще отзывы</button>
+
+                </div>
+
+                <div class="review">
+                    <div class="review-group">
+                        <label class="review__info" for="">ФИО</label>
+                        <input class="review__input" type="text">
+                    </div>
+                    <div class="review-group">
+                        <label class="review__info" for="">E-mail</label>
+                        <input class="review__input" type="email">
+                    </div>
+                    <div class="review-group">
+                        <label class="review__info" for="">Ваш комментарий</label>
+                        <input class="review__input" type="text">
+                    </div>
+                    <button class="review__btn" type="button">Отправить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs-list">
+                        <li class="breadcrumbs-list__item breadcrumbs-list__item--dot"><a class="breadcrumbs-list__link" href="#">Главная страница</a></li>
+                        <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link breadcrumbs-list__link--light" href="#">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="main__title">Корзина</h1>
+            </div>
+
+            <div class="cart">
+                <div class="container">
+                    <table class="cart-table">
+                        <thead class="cart-table__head">
+                            <tr class="cart-table__list list">
+                                <th class="list__title">Фото</th>
+                                <th class="list__title">Наименование</th>
+                                <th class="list__title">Количество</th>
+                                <th class="list__title">Цена</th>
+                                <th class="list__title">Сумма</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="cart-table__body">
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+
+                            <tr class="cart-table__list list">
+                                <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                <td class="list__text">Табличка для фотосессий</td>
+                                <td class="list__amount">
+                                    <div class="purchase-amount">
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                        <input class="purchase-amount__count" type="number" value="10">
+                                        <span class="purchase-amount__text">шт.</span>
+                                        <button type="button" class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="list__price">7 500 ₽</td>
+                                <td class="list__sum">80 000 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="wrapper">
+            <div class="col">
+                <img class="footer__logo" src="./img/logo2.svg" alt="Логотип">
+                <p class="footer__text">Добро пожаловать в интернет – магазин реквизита для игры в мафию Mafia Rekvizit!</p>
+                <p class="footer__text">© Все права защищены 2019</p>
+            </div>
+            
+            <div class="col">
+                <h3 class="footer__title">Каталог</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Маски</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Наборы для мафии</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Номерки</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Карты</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Скатерти</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Таблички</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Сувениры</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3 class="footer__title">Сервис и поддержка</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">О магазине</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Доставка и оплата</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Скидка и акции</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Личный кабинет</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">О мафии</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <a class="footer__title" href="tel:+80647652334">8 (064)
+                    765-23-34</a>
+                <p class="footer__text">ежедневно, 10:00-22:00</p>
+                <h3 class="footer__title">shop@mafia-rekvizit.ru</h3>
+                <a href="#"><img class="footer__sns" src="./img/vk 1.svg" alt="ВК"></a>
+                <a href="#"><img class="footer__sns" src="./img/instagram.svg" alt="Инстаграм"></a>
+                <a href="#"><img class="footer__sns" src="./img/youtube.svg" alt="Ютуб"></a>
+            </div>
+
+            <div class="col">
+                <h3 class="footer__discont">Скидка 10% на первую покупку за подписку</h3>
+                <form class="footer-form" action="">
+                    <input class="footer-form__input" type="email" placeholder="Email">
+                    <button class="footer-form__btn" type="submit">Подписаться</button>
+                </form>
+                <p class="footer__p">Нажимая кнопку “Подписаться” вы соглашаетесь с <u>Политикой конфиденциальности</u> сайта</p>
+                <img class="footer__visa" src="./img/visa1.svg" alt="Логотип">
+            </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
