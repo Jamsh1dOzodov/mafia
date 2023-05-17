@@ -28,12 +28,19 @@
         position: relative;
     }
 
-    // .header-form__input
+    // .header__input
     &__input {
         width: 555px;
         padding: 16px 20px;
         border: 1px solid #B7BCC0;
         border-radius: 3px;
+        outline: none;
+        &[type="search"]::-webkit-search-results-decoration,
+        &[type="search"]::-webkit-search-results-button,
+        &[type="search"]::-webkit-search-cancel-button,
+        &[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
 
     }
 
@@ -68,8 +75,10 @@
         // .header-list__item
         &__item {
             position: relative;
-            &:first-child{
+
+            &:first-child {
                 padding-right: 41px;
+
                 &::after {
                     position: absolute;
                     top: -9px;
