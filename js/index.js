@@ -16,8 +16,23 @@ purchase_btns.forEach(btn => {
             // Инкримент
             input.value++
         }
-        console.log(input.value)
     })
 })
 
 
+const openTabs = (event, tabName) => {
+    let i, tabContent, tabLinks;
+
+    tabContent = document.querySelectorAll(".tabContent")
+    for(i = 0; i < tabContent.length; i++){
+        tabContent[i].style.display = "none"
+    }
+
+    tabLinks = document.querySelectorAll(".description-list__item")
+    for(i = 0; i < tabLinks.length; i++){
+        tabLinks[i].className = tabLinks[i].className.replace(" description-list__item--active", "")
+    }
+
+    document.getElementById(tabName).style.display = "block"
+    event.currentTarget.className += " description-list__item--active";
+}

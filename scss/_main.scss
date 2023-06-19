@@ -115,6 +115,7 @@
                 background-color: transparent;
                 border: 1px solid #B7BCC0;
                 border-radius: 2px;
+                // padding: 49px 18px 50px 20px; не смог еще исправить после swiper
 
                 img {
                     padding: 49px 18px 50px 20px;
@@ -436,6 +437,7 @@
     .comments {
         margin-bottom: 90px;
         padding-right: 100px;
+        display: none;
 
         .comment {
             padding-left: 50px;
@@ -570,18 +572,27 @@
                             mix-blend-mode: normal;
                             opacity: 0.8;
 
-                            // // .list__title--left
-                            // &--left{
-                            //     padding: 0 60px 0 39px;
-                            // }
-                            // // .list__title--right
-                            // &--right{
-                            //     padding:0 196px 0 275px;
-                            // }
-                            // // list__title--middle
-                            // &--middle{
-                            //     padding: 0 190px 0 226px;
-                            // }
+                            // .list__title--left
+                            &--left{
+                                width: 130px;
+                                padding-left: 39px;
+                            }
+                            // list__title--second
+                            &--second{
+                                width: 313px;
+                            }
+                            // list__title--third
+                            &--third{
+                                width: 257px;
+                            }
+                            // list__title--fourth
+                            &--fourth{
+                                width: 225px;
+                            }
+                            // .list__title--right
+                            &--right{
+                                padding-right: 275px;
+                            }
                         }
 
                         // list__img
@@ -673,5 +684,73 @@
                 }
             }
         }
+    }
+
+    .home{
+
+        // home-header
+        &-header{
+            margin-top: 30px;
+        }
+        // home-sidebar
+        &-sidebar{
+            background-color: aqua;
+            padding: 32px 116px 140px 30px;
+
+            // home-sidebar__title
+            &__title{
+                margin-bottom: 10px;
+                color: #705658;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 27px;
+            }
+            // home-sidebar__list
+            &__list{
+                color: #12212D;
+                font-size: 14px;
+                line-height: 42px;
+            }
+        }
+        // home-bigimg
+        &-bigimg{
+            margin-bottom: 80px;
+        }
+
+        // home-column
+        &-column{
+            background-color: #E8E8E8;
+            padding: 31px 17px 0 31px;
+            margin-right: 30px;
+
+            // home-column__title
+            &__title{
+                padding-right: 244px;
+                max-width: 400px;
+                color: #705658;
+                font-size: 30px;
+                line-height: 41px;
+                font-weight: 700;
+            }
+            // home-column__price
+            &__price{
+                color: #FFFFFF;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 41px;
+                letter-spacing: -1.1px;
+                margin-top: 19px;
+            }
+            // home-column__btn
+            &__btn{
+                margin-right: 121px;
+                color: #FFFFFF;
+                background-color: $red-light;
+                border-radius: 3px;
+                padding: 16px 61px 15px 62px;
+                border: none;
+            }
+        }
+
     }
 }
