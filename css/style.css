@@ -460,11 +460,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.main .description {
+  margin-top: 20px;
+}
 .main .description-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 80px;
 }
 .main .description-list__item:first-child {
   margin-right: 95px;
@@ -488,109 +490,30 @@ body {
   line-height: 19px;
   font-size: 14px;
 }
-.main .description__title {
+.main .description-about {
+  background-color: aqua;
+  margin: 20px 0 167px 0;
+  padding: 40px 224px 75px 50px;
+}
+.main .description-about__title {
   color: #12212D;
   font-size: 14px;
   line-height: 19px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.main .description__text {
+.main .description-about__text {
   margin-bottom: 35px;
   color: #12212D;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 }
-.main .description span {
+.main .description-about span {
   color: #12212D;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-}
-.main .description .simproducts {
-  margin-top: 167px;
-}
-.main .description .simproducts__title {
-  color: #705658;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 27px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.main .description .simproducts-btn {
-  margin-top: 41px;
-  border-top: 1px solid #B7BCC0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
-}
-.main .description .simproducts-btn__left {
-  border: 1px solid #B7BCC0;
-  padding: 28px 23px 27px 25px;
-  background-color: transparent;
-}
-.main .description .simproducts-btn__right {
-  border: 1px solid #B7BCC0;
-  padding: 28px 23px 27px 25px;
-  background-color: transparent;
-}
-.main .description .card__description {
-  color: #4DA455;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 500;
-}
-.main .description .card-header {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.main .description .card-body {
-  color: rgba(18, 33, 45, 0.6980392157);
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.main .description .card-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.main .description .card-footer__h4 {
-  color: rgba(18, 33, 45, 0.6980392157);
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 700;
-  margin-right: 8px;
-}
-.main .description .card-footer__price {
-  color: #705658;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 700;
-}
-.main .description .card-footer__btn {
-  color: #DC434E;
-  background-color: transparent;
-  border: 1px solid #DC434E;
-  padding: 10px 20px 10px 20px;
-  border-radius: 3px;
-  margin-left: 102px;
-}
-.main .description .card--first {
-  padding-left: 20px;
-}
-.main .description .card--last {
-  padding-right: 20px;
 }
 .main .comments {
   margin-bottom: 90px;
@@ -796,54 +719,157 @@ body {
   padding: 16px 45px 15px 45px;
   margin-left: 19px;
 }
-.main .home-header {
+
+.home-header {
   margin-top: 30px;
 }
-.main .home-sidebar {
+.home-sidebar {
   background-color: aqua;
   padding: 32px 116px 140px 30px;
 }
-.main .home-sidebar__title {
+.home-sidebar__title {
   margin-bottom: 10px;
   color: #705658;
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
 }
-.main .home-sidebar__list {
+.home-sidebar__list {
   color: #12212D;
   font-size: 14px;
   line-height: 42px;
 }
-.main .home-bigimg {
+.home-bigimg {
   margin-bottom: 80px;
 }
-.main .home-column {
+.home-simproducts__title {
+  color: #705658;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.home .simproducts-btn {
+  border: 1px solid #B7BCC0;
+  padding: 28px 23px 27px 25px;
+  background-color: transparent;
+}
+.home .simproducts-btn__group {
+  margin-top: 41px;
+  border-top: 1px solid #B7BCC0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+.home-column {
   background-color: #E8E8E8;
   padding: 31px 17px 0 31px;
+}
+.home-column--left {
   margin-right: 30px;
 }
-.main .home-column__title {
-  padding-right: 244px;
+.home-column__title {
+  padding-right: 185px;
   max-width: 400px;
   color: #705658;
   font-size: 30px;
   line-height: 41px;
   font-weight: 700;
 }
-.main .home-column__price {
+.home-column__price {
   color: #FFFFFF;
   font-size: 30px;
   font-weight: 700;
   line-height: 41px;
   letter-spacing: -1.1px;
-  margin-top: 19px;
+  margin: 19px 0 20px 0;
 }
-.main .home-column__btn {
+.home-column__btn {
   margin-right: 121px;
   color: #FFFFFF;
   background-color: #DB404B;
   border-radius: 3px;
   padding: 16px 61px 15px 62px;
   border: none;
+}
+.home-footer {
+  margin-bottom: 60px;
+}
+.home-footer__title {
+  color: #705658;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.home-footer__text {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  max-width: 1230px;
+}
+
+.card__description {
+  color: #4DA455;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.card__description--red {
+  color: #D0021B;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.card-header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card-body {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-footer__h4 {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.card-footer__price {
+  color: #705658;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.card-footer__btn {
+  color: #DC434E;
+  background-color: transparent;
+  border: 1px solid #DC434E;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  margin-left: 102px;
+}
+.card--first {
+  padding-left: 20px;
+}
+.card--last {
+  padding-right: 20px;
 }
