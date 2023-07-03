@@ -1,5 +1,6 @@
 .card {
-
+    background-color: aqua;
+    padding: 20px 20px 11px 20px;
     // .card__description
     &__description {
         color: #4DA455;
@@ -17,14 +18,15 @@
 
     // .card-header
     &-header {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin: 10px 0 20px 0;
+        width: 263px;
+        height: 152px;
     }
 
     // .card-body
     &-body {
         color: #12212DB2;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 14px;
         font-weight: 500;
         margin-bottom: 10px;
@@ -59,7 +61,7 @@
             border: 1px solid #DC434E;
             padding: 10px 20px 10px 20px;
             border-radius: 3px;
-            margin-left: 102px;
+            margin-left: 90px;
         }
     }
 

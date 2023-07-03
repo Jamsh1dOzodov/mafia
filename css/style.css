@@ -585,6 +585,7 @@ body {
   border: 1px solid #B7BCC0;
   border-radius: 3px;
   margin-bottom: 15px;
+  outline: none;
 }
 .main .comments .review__btn {
   background-color: #DB404B;
@@ -723,6 +724,11 @@ body {
 .home-header {
   margin-top: 30px;
 }
+.home-header .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .home-sidebar {
   background-color: aqua;
   padding: 32px 116px 140px 30px;
@@ -739,8 +745,8 @@ body {
   font-size: 14px;
   line-height: 42px;
 }
-.home-bigimg {
-  margin-bottom: 80px;
+.home-simproducts {
+  margin-top: 80px;
 }
 .home-simproducts__title {
   color: #705658;
@@ -750,12 +756,7 @@ body {
   text-align: center;
   padding-bottom: 50px;
 }
-.home .simproducts-btn {
-  border: 1px solid #B7BCC0;
-  padding: 28px 23px 27px 25px;
-  background-color: transparent;
-}
-.home .simproducts-btn__group {
+.home .simproducts-btns {
   margin-top: 41px;
   border-top: 1px solid #B7BCC0;
   display: -webkit-box;
@@ -764,7 +765,24 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 50px;
+}
+.home .simproducts-btns__btn {
+  border: 1px solid #B7BCC0;
+  padding: 27px 22px 26px 24px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .simproducts-btns__btn--right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.home-more {
+  margin-top: 71px;
 }
 .home-column {
   background-color: #E8E8E8;
@@ -798,7 +816,8 @@ body {
   border: none;
 }
 .home-footer {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  margin-top: 60px;
 }
 .home-footer__title {
   color: #705658;
@@ -814,7 +833,14 @@ body {
   font-weight: 500;
   max-width: 1230px;
 }
+.home .simproducts-btns--similar {
+  padding-bottom: 48px;
+}
 
+.card {
+  background-color: aqua;
+  padding: 20px 20px 11px 20px;
+}
 .card__description {
   color: #4DA455;
   font-size: 14px;
@@ -828,12 +854,13 @@ body {
   font-weight: 500;
 }
 .card-header {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
+  width: 263px;
+  height: 152px;
 }
 .card-body {
   color: rgba(18, 33, 45, 0.6980392157);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -865,7 +892,7 @@ body {
   border: 1px solid #DC434E;
   padding: 10px 20px 10px 20px;
   border-radius: 3px;
-  margin-left: 102px;
+  margin-left: 90px;
 }
 .card--first {
   padding-left: 20px;

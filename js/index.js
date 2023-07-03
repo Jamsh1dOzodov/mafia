@@ -36,3 +36,19 @@ const openTabs = (event, tabName) => {
     document.getElementById(tabName).style.display = "block"
     event.currentTarget.className += " description-list__item--active";
 }
+
+
+const formEl = document.querySelector('.review');
+
+formEl.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const emailInp = formEl.email
+    const emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    
+    if(emailInp.value){
+        emailInp.style.border = '1px solid green'
+    }
+    else{
+        emailInp.style.border = '1px dashed red'
+    }
+})
