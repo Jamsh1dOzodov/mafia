@@ -62,12 +62,17 @@
         margin-bottom: 51px;
 
         .col {
-            width: 40%;
-            flex: 40%;
+
+            // col--little
+            &--little {
+                margin-right: 60px;
+                max-width: 40%;
+                flex: 40%;
+            }
 
             // .col--big
             &--big {
-                width: 60%;
+                max-width: 60%;
                 flex: 60%;
             }
         }
@@ -77,8 +82,10 @@
 
             // .purchase-header__img
             &__img {
-                padding: 0 0 44px 55px;
+                padding: 21px 55px 20px 55px;
                 position: relative;
+                background-color: aqua;
+                margin-bottom: 10px;
 
                 &::after {
                     position: absolute;
@@ -87,8 +94,8 @@
                     color: #FFFFFF;
                     display: block;
                     padding: 3px 13px 3px 11px;
-                    top: 0;
-                    right: 60px;
+                    top: 21px;
+                    right: 26px;
                     font-size: 14px;
                     line-height: 19px;
                 }
@@ -96,31 +103,21 @@
 
             // .purchase-header__images
             &__images {
+                background-color: aqua;
+                padding: 14px 6px 13px 6px;
+                // width: 133px;
 
-                // .purchase-header__images--first
-                &--first {
-                    padding-left: 6px;
-                }
-
-                // .purchase-header__images--second
-                &--second {
-                    margin-left: 25px;
-                    margin-right: 25px;
-                }
             }
 
             // .purchase-header__btn
             &__btn {
-                margin-left: 19px;
-                margin-right: 60px;
                 background-color: transparent;
                 border: 1px solid #B7BCC0;
                 border-radius: 2px;
-                // padding: 49px 18px 50px 20px; не смог еще исправить после swiper
+                transform: rotate(180deg);
+                padding: 49px 18px 50px 20px;
+                // не смог еще исправить после swiper
 
-                img {
-                    padding: 49px 18px 50px 20px;
-                }
             }
         }
 
@@ -129,8 +126,7 @@
             display: flex;
             align-items: center;
             border-bottom: 1px solid #B7BCC0;
-            margin-top: 9px;
-            padding-bottom: 32px;
+            padding: 26px 30px 32px 0;
 
             // .purchase-buy__h3
             &__h3 {
@@ -157,7 +153,7 @@
                 border-radius: 3px;
                 border: none;
                 color: #FFFFFF;
-                margin-left: 62px;
+                margin-left: 46px;
             }
 
             // .purchase-buy__text
@@ -165,7 +161,7 @@
                 color: #D57B1C;
                 font-size: 14px;
                 line-height: 19px;
-                margin-left: 47px;
+                margin-left: 37px;
             }
         }
 
@@ -181,7 +177,7 @@
                     border: 1px solid #B7BCC0;
                     background-color: transparent;
                     border-radius: 2px;
-                    margin-right: 17px;
+                    margin-right: 12px;
                 }
 
                 // .purchase-amount__btn--plus
@@ -212,13 +208,14 @@
                 color: #12212D;
                 font-size: 14px;
                 line-height: 19px;
-                margin-right: 18px;
+                margin-right: 12px;
             }
         }
 
         // .purchase-description
         &-description {
             margin-top: 28px;
+            padding-bottom: 45px;
 
             // .purchase-descriotion__cat
             &__cat {
@@ -237,7 +234,7 @@
             // .purchase-description__text
             &__text {
                 color: #12212D;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 24px;
                 font-weight: 400;
                 width: 690px;
@@ -269,11 +266,12 @@
         // .description-list
         &-list {
             display: flex;
+            background-color: aqua;
 
             // .description-list__item
             &__item {
                 &:first-child {
-                    margin-right: 95px;
+                    margin-right: 35px;
                     padding-left: 30px;
                 }
 
@@ -286,19 +284,22 @@
                         content: '';
                         background-color: #D93C47;
                         height: 4px;
-                        width: 128px;
+                        width: 124px;
                         bottom: -16px;
-                        right: -31px;
+                        right: 0;
                     }
                 }
             }
 
-            // .description-list__link
-            &__link {
+            // .description-list__item
+            &__item {
                 color: #12212DB2;
                 font-weight: 500;
                 line-height: 19px;
                 font-size: 14px;
+                padding: 21px 30px 20px 30px;
+                background-color: #FFFFFF;
+                border: none;
             }
         }
 
@@ -450,9 +451,10 @@
     }
 
     .comments {
-        margin-bottom: 90px;
-        padding-right: 100px;
+        margin: 20px 0 90px 0;
+        padding: 30px 100px 40px 50px;
         display: none;
+        background-color: aqua;
 
         .comment {
             padding-left: 50px;
@@ -521,6 +523,7 @@
                 border-radius: 3px;
                 margin-bottom: 15px;
                 outline: none;
+                padding-left: 3px;
             }
 
             // .review__btn
@@ -723,7 +726,8 @@
     // home-header
     &-header {
         margin-top: 30px;
-        .wrapper{
+
+        .wrapper {
             justify-content: space-between;
         }
     }
@@ -731,7 +735,8 @@
     // home-sidebar
     &-sidebar {
         background-color: aqua;
-        padding: 32px 116px 140px 30px;
+        padding: 32px 0 141px 0;
+        margin-right: 30px;
 
         // home-sidebar__title
         &__title {
@@ -740,6 +745,7 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
+            padding-left: 30px;
         }
 
         // home-sidebar__list
@@ -747,12 +753,47 @@
             color: #12212D;
             font-size: 14px;
             line-height: 42px;
+
+            .list {
+
+                // list__item
+                &__item {
+                    width: 300px;
+
+                    //list-item--active
+                    &--active {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 5px;
+                            height: 42px;
+                            background-color: #D93C47;
+                            left: 0;
+
+                        }
+                    }
+                }
+
+                //list__link
+                &__link {
+                    display: inline-block;
+                    padding-left: 30px;
+                    width: calc(100% - 30px);
+
+                    &:hover {
+                        background-color: #FCECED;
+                    }
+                }
+            }
         }
     }
 
     //home-simproducts
     &-simproducts {
         margin-top: 80px;
+
         // .home-simproducts__title
         &__title {
             color: #705658;
@@ -786,9 +827,10 @@
     }
 
     // home-more
-    &-more{
+    &-more {
         margin-top: 71px;
     }
+
     // home-column
     &-column {
         background-color: #E8E8E8;
@@ -853,7 +895,8 @@
             max-width: 1230px;
         }
     }
-    .simproducts-btns--similar{
+
+    .simproducts-btns--similar {
         padding-bottom: 48px;
     }
 }

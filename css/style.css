@@ -308,21 +308,24 @@ body {
 .main .purchase {
   margin-bottom: 51px;
 }
-.main .purchase .col {
-  width: 40%;
+.main .purchase .col--little {
+  margin-right: 60px;
+  max-width: 40%;
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
 }
 .main .purchase .col--big {
-  width: 60%;
+  max-width: 60%;
   -webkit-box-flex: 60%;
       -ms-flex: 60%;
           flex: 60%;
 }
 .main .purchase-header__img {
-  padding: 0 0 44px 55px;
+  padding: 21px 55px 20px 55px;
   position: relative;
+  background-color: aqua;
+  margin-bottom: 10px;
 }
 .main .purchase-header__img::after {
   position: absolute;
@@ -331,26 +334,21 @@ body {
   color: #FFFFFF;
   display: block;
   padding: 3px 13px 3px 11px;
-  top: 0;
-  right: 60px;
+  top: 21px;
+  right: 26px;
   font-size: 14px;
   line-height: 19px;
 }
-.main .purchase-header__images--first {
-  padding-left: 6px;
-}
-.main .purchase-header__images--second {
-  margin-left: 25px;
-  margin-right: 25px;
+.main .purchase-header__images {
+  background-color: aqua;
+  padding: 14px 6px 13px 6px;
 }
 .main .purchase-header__btn {
-  margin-left: 19px;
-  margin-right: 60px;
   background-color: transparent;
   border: 1px solid #B7BCC0;
   border-radius: 2px;
-}
-.main .purchase-header__btn img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   padding: 49px 18px 50px 20px;
 }
 .main .purchase-buy {
@@ -361,8 +359,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #B7BCC0;
-  margin-top: 9px;
-  padding-bottom: 32px;
+  padding: 26px 30px 32px 0;
 }
 .main .purchase-buy__h3 {
   color: rgba(18, 33, 45, 0.6980392157);
@@ -384,20 +381,20 @@ body {
   border-radius: 3px;
   border: none;
   color: #FFFFFF;
-  margin-left: 62px;
+  margin-left: 46px;
 }
 .main .purchase-buy__text {
   color: #D57B1C;
   font-size: 14px;
   line-height: 19px;
-  margin-left: 47px;
+  margin-left: 37px;
 }
 .main .purchase-amount__btn--minus {
   padding: 6px 12px 5px 13px;
   border: 1px solid #B7BCC0;
   background-color: transparent;
   border-radius: 2px;
-  margin-right: 17px;
+  margin-right: 12px;
 }
 .main .purchase-amount__btn--plus {
   padding: 6px 10px 5px 10px;
@@ -419,10 +416,11 @@ body {
   color: #12212D;
   font-size: 14px;
   line-height: 19px;
-  margin-right: 18px;
+  margin-right: 12px;
 }
 .main .purchase-description {
   margin-top: 28px;
+  padding-bottom: 45px;
 }
 .main .purchase-description__cat {
   color: #12212D;
@@ -436,7 +434,7 @@ body {
 }
 .main .purchase-description__text {
   color: #12212D;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   width: 690px;
@@ -467,9 +465,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: aqua;
 }
 .main .description-list__item:first-child {
-  margin-right: 95px;
+  margin-right: 35px;
   padding-left: 30px;
 }
 .main .description-list__item--active {
@@ -480,15 +479,18 @@ body {
   content: "";
   background-color: #D93C47;
   height: 4px;
-  width: 128px;
+  width: 124px;
   bottom: -16px;
-  right: -31px;
+  right: 0;
 }
-.main .description-list__link {
+.main .description-list__item {
   color: rgba(18, 33, 45, 0.6980392157);
   font-weight: 500;
   line-height: 19px;
   font-size: 14px;
+  padding: 21px 30px 20px 30px;
+  background-color: #FFFFFF;
+  border: none;
 }
 .main .description-about {
   background-color: aqua;
@@ -516,9 +518,10 @@ body {
   font-weight: 400;
 }
 .main .comments {
-  margin-bottom: 90px;
-  padding-right: 100px;
+  margin: 20px 0 90px 0;
+  padding: 30px 100px 40px 50px;
   display: none;
+  background-color: aqua;
 }
 .main .comments .comment {
   padding-left: 50px;
@@ -586,6 +589,7 @@ body {
   border-radius: 3px;
   margin-bottom: 15px;
   outline: none;
+  padding-left: 3px;
 }
 .main .comments .review__btn {
   background-color: #DB404B;
@@ -731,7 +735,8 @@ body {
 }
 .home-sidebar {
   background-color: aqua;
-  padding: 32px 116px 140px 30px;
+  padding: 32px 0 141px 0;
+  margin-right: 30px;
 }
 .home-sidebar__title {
   margin-bottom: 10px;
@@ -739,11 +744,34 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
+  padding-left: 30px;
 }
 .home-sidebar__list {
   color: #12212D;
   font-size: 14px;
   line-height: 42px;
+}
+.home-sidebar__list .list__item {
+  width: 300px;
+}
+.home-sidebar__list .list__item--active {
+  position: relative;
+}
+.home-sidebar__list .list__item--active::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 42px;
+  background-color: #D93C47;
+  left: 0;
+}
+.home-sidebar__list .list__link {
+  display: inline-block;
+  padding-left: 30px;
+  width: calc(100% - 30px);
+}
+.home-sidebar__list .list__link:hover {
+  background-color: #FCECED;
 }
 .home-simproducts {
   margin-top: 80px;
@@ -883,7 +911,7 @@ body {
 .card-footer__price {
   color: #705658;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
   font-weight: 700;
 }
 .card-footer__btn {
@@ -892,7 +920,7 @@ body {
   border: 1px solid #DC434E;
   padding: 10px 20px 10px 20px;
   border-radius: 3px;
-  margin-left: 90px;
+  margin-left: 89px;
 }
 .card--first {
   padding-left: 20px;
