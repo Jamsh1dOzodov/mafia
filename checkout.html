@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+
+                <div class="header-logo">
+                    <a href="/"><img class="header-logo__img" src="./img/logo.png" alt="Логотип"></a>
+                    <p class="header-logo__text">Тут должен быть слоган</p>
+                </div>
+
+                <!-- <div class="header-col"> -->
+                <form class="header-form" action="">
+                    <input class="header__input" type="search" placeholder="Поиск товаров">
+                    <button class="header__btn" type="submit"><img src="./img/research_icon.svg" alt="Лупа"></button>
+                </form>
+                <ul class="header-list wrapper">
+                    <li class="header-list__item">
+                        <a class="header-list__link" href="tel:+80647652334">8 (064)765-23-34</a>
+                        <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                    </li>
+                    <li class="header-list__item">
+                        <a class="header-list__link" href="#">Вход / Регистрация</a>
+                        <img class="header-list__triangle" src="./img/triangle.svg" alt="Треугольник">
+                    </li>
+                </ul>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <nav class="nav">
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="nav-list">
+                        <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="#">Все
+                                товары</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Скидки и акции</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О мафии</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Доставка и оплата</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="nav-korzina">
+                        <div class="col">
+                            <div class="nav-korzina__logo">
+                                <a href="/basket.html"><img src="./img/nav_basket.svg" alt="Корзина"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="nav-korzina__name">Корзина</p>
+                            <h3 class="nav-korzina__price">144 323 руб.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-list__item breadcrumbs-list__item--dot"><a class="breadcrumbs-list__link"
+                            href="/">Главная страница</a></li>
+                    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link breadcrumbs-list__link--light"
+                            href="#">Корзина</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="checkout">
+            <div class="container">
+                <h1 class="main__title">Корзина</h1>
+
+                <div class="wrapper">
+                    <div class="basket">
+                        <div class="cart">
+                            <div class="cart-background_color background_color">
+                                <table class="cart-table">
+
+                                    <thead class="cart-table__head">
+                                        <tr class="cart-table__list list">
+                                            <th class="list__title list__title--left">Фото</th>
+                                            <th class="list__title list__title--second">Наименование</th>
+                                            <th class="list__title list__title--third">Количество</th>
+                                            <th class="list__title list__title--right">Сумма</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody class="cart-table__body">
+                                        <tr class="cart-table__list list">
+                                            <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                            <td class="list__text">Табличка для фотосессий</td>
+                                            <td class="list__amount">
+                                                <div class="purchase-amount">
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                                    <input class="purchase-amount__count" type="number" value="10">
+                                                    <span class="purchase-amount__text">шт.</span>
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="list__price">7 500 ₽</td> -->
+                                            <td class="list__sum">80 000 ₽</td>
+                                            <td class="list__x"><a href="#"><img src="./img/X.svg" alt="Крестик"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="cart-table__list list">
+                                            <td class="list__img list__img--small"><img src="./img/basket_2.svg"
+                                                    alt="Картинка">
+                                            </td>
+                                            <td class="list__text">Маска для мафии «Чикаго»</td>
+                                            <td class="list__amount">
+                                                <div class="purchase-amount">
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                                    <input class="purchase-amount__count" type="number" value="5">
+                                                    <span class="purchase-amount__text">шт.</span>
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="list__price">1 900 ₽</td> -->
+                                            <td class="list__sum">10 000 ₽</td>
+                                            <td class="list__x"><a href="#"><img src="./img/X.svg" alt="Крестик"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="cart-table__list list">
+                                            <td class="list__img"><img src="./img/basket_1.svg" alt="Картинка"></td>
+                                            <td class="list__text">Табличка для фотосессий</td>
+                                            <td class="list__amount">
+                                                <div class="purchase-amount">
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--minus">-</button>
+                                                    <input class="purchase-amount__count" type="number" value="5">
+                                                    <span class="purchase-amount__text">шт.</span>
+                                                    <button type="button"
+                                                        class="purchase-amount__btn purchase-amount__btn--plus">+</button>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="list__price">1 900 ₽</td> -->
+                                            <td class="list__sum">10 000 ₽</td>
+                                            <td class="list__x"><a href="#"><img src="./img/X.svg" alt="Крестик"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="yourdata">
+                        <div class="yourdata-form">
+                            <div class="yourdata-form__background">
+                                <h3 class="yourdata-form__title">Ваши данные</h3>
+                                <p class="yourdata-form__titles">ФИО</p>
+                                <input class="yourdata-form__nameInp" type="text" placeholder="ФИО">
+                                <p class="yourdata-form__titles">Номер телефона</p>
+                                <input class="yourdata-form__phoneInp" type="text" placeholder="+7 8 (___) ___-__-__">
+                                <p class="yourdata-form__titles">E-mail</p>
+                                <input class="yourdata-form__emailInp" type="text" placeholder="|">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="coupon">
+                        <div class="coupon-form">
+                            <h3 class="coupon-form__title">Купон</h3>
+                            <input class="coupon-form__inp" type="text" placeholder="Введите номер купона">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="delivery">
+                        <div class="delivery-form">
+                            <h3 class="delivery-form__title">Доставка</h3>
+                            <div class="col col--left">
+                                <p class="delivery-form__titles">Выберите Город</p>
+                                <input class="delivery-form__inp delivery-form__cityInp" type="text"
+                                    placeholder="Москва">
+                                <p class="delivery-form__titles">Выберите Дом</p>
+                                <input class="delivery-form__inp delivery-form__homeInp" type="text" placeholder="21">
+                            </div>
+                            <div class="col">
+                                <p class="delivery-form__titles">Выберите Улицу</p>
+                                <input class="delivery-form__inp delivery-form__streetInp" type="text"
+                                    placeholder="Киквидзе">
+                                <p class="delivery-form__titles">Выберите Квартиру</p>
+                                <input class="delivery-form__inp delivery-form__apartInp" type="text" placeholder="12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="payment">
+                        <div class="payment-form">
+                            <h3 class="payment-form__title">Способ оплаты</h3>
+                            <button class="payment-form__btn payment-form__btn--active">Наличными</button>
+                            <button class="payment-form__btn">VISA/Mastercard</button>
+                            <button class="payment-form__btn">Наложенным платежом</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="topay">
+                        <div class="topay-form">
+                            <p class="topay-form__title">К оплате</p>
+                            <p class="topay-form__sum">100 000.00 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="paycomment">
+                        <h3 class="paycomment__title">Комментарий к заказу</h3>
+                        <textarea class="paycomment__text" name="" id="" placeholder="Введите текст"></textarea>
+                    </div>
+                </div>
+
+                <div class="basket checkBasketBtns">
+                    <div class="cart-order order">
+                        <a href="#">
+                            <p class="cart-order__litetext">Продолжить покупки</p>
+                        </a>
+                        <button type="button" class="cart-order__btn">Оформить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="col">
+                    <img class="footer__logo" src="./img/logo2.png" alt="Логотип">
+                    <p class="footer__text">Добро пожаловать в интернет – магазин реквизита для игры в мафию Mafia
+                        Rekvizit!</p>
+                    <p class="footer__text">© Все права защищены 2019</p>
+                </div>
+
+                <div class="col">
+                    <h3 class="footer__title">Каталог</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Маски</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Наборы для мафии</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Номерки</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Карты</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Скатерти</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Таблички</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Сувениры</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3 class="footer__title">Сервис и поддержка</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">О магазине</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Доставка и оплата</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Скидка и акции</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Личный кабинет</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">О мафии</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <a class="footer__title" href="tel:+80647652334">8 (064)
+                        765-23-34</a>
+                    <p class="footer__text">ежедневно, 10:00-22:00</p>
+                    <h3 class="footer__title">shop@mafia-rekvizit.ru</h3>
+                    <a href="#"><img class="footer__sns" src="./img/vk 1.svg" alt="ВК"></a>
+                    <a href="#"><img class="footer__sns" src="./img/instagram.svg" alt="Инстаграм"></a>
+                    <a href="#"><img class="footer__sns" src="./img/youtube.svg" alt="Ютуб"></a>
+                </div>
+
+                <div class="col">
+                    <h3 class="footer__discont">Скидка 10% на первую покупку за подписку</h3>
+                    <form class="footer-form" action="">
+                        <input class="footer-form__input" type="email" placeholder="Email">
+                        <button class="footer-form__btn" type="submit">Подписаться</button>
+                    </form>
+                    <p class="footer__p">Нажимая кнопку “Подписаться” вы соглашаетесь с <u>Политикой
+                            конфиденциальности</u> сайта</p>
+                    <img class="footer__visa" src="./img/visa1.svg" alt="Логотип">
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

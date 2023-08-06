@@ -252,10 +252,10 @@ body {
 .footer-form__btn {
   background-color: transparent;
   color: #FFFFFF;
-  border-color: #FFFFFF;
   padding: 10px 23px;
   border-radius: 3px;
   margin-left: 26px;
+  border: 1px solid #FFF;
 }
 
 .main {
@@ -267,14 +267,14 @@ body {
           align-items: start;
 }
 .main .breadcrumbs {
-  padding-top: 28px;
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 }
 .main .breadcrumbs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: aqua;
+  padding: 26px 0 26px 50px;
 }
 .main .breadcrumbs-list__item--dot {
   margin-right: 8px;
@@ -863,6 +863,251 @@ body {
 }
 .home .simproducts-btns--similar {
   padding-bottom: 48px;
+}
+
+.checkout .basket .cart-background_color {
+  padding: 30px 30px 0 30px;
+}
+.checkout .basket .cart-table {
+  width: 908px;
+}
+.checkout .basket .cart-table__list .list__title {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 12px;
+  line-height: 16px;
+  padding: 16px 0 18px 0;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.checkout .basket .cart-table__list .list__title--left {
+  width: 91px;
+  padding-left: 39px;
+}
+.checkout .basket .cart-table__list .list__title--second {
+  width: 313px;
+}
+.checkout .basket .cart-table__list .list__title--third {
+  width: 234px;
+}
+.checkout .basket .cart-table__list .list__title--right {
+  padding-right: 173px;
+}
+.checkout .yourdata {
+  padding: 0 50px 0 20px;
+}
+.checkout .yourdata-form {
+  padding: 30px 30px 40px 30px;
+  background-color: aqua;
+  display: inline-block;
+}
+.checkout .yourdata-form__title {
+  color: #705658;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout .yourdata-form__titles {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 20px 0 10px 0;
+}
+.checkout .yourdata-form__nameInp {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(18, 33, 45, 0.6980392157);
+  width: 242px;
+  height: 39px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #B7BCC0;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+}
+.checkout .yourdata-form__phoneInp {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(18, 33, 45, 0.6980392157);
+  width: 242px;
+  height: 39px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #B7BCC0;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+}
+.checkout .yourdata-form__emailInp {
+  color: #12212D;
+  font-size: 14px;
+  font-weight: 19px;
+  width: 242px;
+  height: 39px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #B7BCC0;
+  padding-left: 10px;
+  background-color: #FFFFFF;
+}
+.checkout .form-group {
+  padding-right: 332px;
+}
+.checkout .coupon-form {
+  padding: 30px 713px 30px 30px;
+  background-color: aqua;
+  display: inline-block;
+  margin-top: 30px;
+}
+.checkout .coupon-form__title {
+  color: #705658;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout .coupon-form__inp {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #B7BCC0;
+  width: 213px;
+  height: 39px;
+  outline: none;
+  padding-left: 10px;
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+}
+.checkout .delivery-form {
+  padding: 30px 463px 30px 30px;
+  background-color: aqua;
+  display: inline-block;
+  margin-top: 30px;
+}
+.checkout .delivery-form__title {
+  color: #705658;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.checkout .delivery-form .col {
+  display: inline-block;
+}
+.checkout .delivery-form .col--left {
+  margin-right: 20px;
+}
+.checkout .delivery-form__titles {
+  color: rgba(18, 33, 45, 0.6980392157);
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+.checkout .delivery-form__inp {
+  color: #12212D;
+  font-size: 14px;
+  line-height: 19px;
+  border: 1px solid #B7BCC0;
+  outline: none;
+  background-color: #FFFFFF;
+  width: 213px;
+  height: 39px;
+  padding-left: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.checkout .payment-form {
+  padding: 30px 241px 30px 30px;
+  background-color: aqua;
+  display: inline-block;
+  margin: 30px 0 20px 0;
+}
+.checkout .payment-form__title {
+  color: #705658;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.checkout .payment-form__btn {
+  color: #12212D;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 15px 60px 16px 60px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  float: left;
+  background: #FBECED;
+  margin-top: 20px;
+}
+.checkout .payment-form__btn--active {
+  background: linear-gradient(212deg, #E75B65 0%, #D12C37 100%);
+  color: #FFF;
+}
+.checkout .topay-form {
+  padding: 30px;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 907px;
+}
+.checkout .topay-form__title {
+  font-size: 14px;
+  color: rgba(18, 33, 45, 0.7);
+  font-weight: 500;
+  line-height: normal;
+}
+.checkout .topay-form__sum {
+  color: #D93C47;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 110% */
+  letter-spacing: -0.143px;
+}
+.checkout .paycomment {
+  background-color: aqua;
+  padding: 30px 150px 30px 30px;
+}
+.checkout .paycomment .paycomment__title {
+  color: #D93C47;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+.checkout .paycomment .paycomment__text {
+  width: 750px;
+  height: 100px;
+  border-radius: 3px;
+  border: 1px solid #B7BCC0;
+  color: rgba(18, 33, 45, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 20px 0;
+  resize: none;
+  outline: none;
+  padding: 20px;
+}
+.checkout .checkBasketBtns {
+  width: 968px;
+  margin-bottom: 60px;
+}
+.checkout .checkBasketBtns .order {
+  padding: 0 332px 0 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card {
