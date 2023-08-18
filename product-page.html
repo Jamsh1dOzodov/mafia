@@ -214,7 +214,8 @@
                 <div class="description-list">
                     <button class="description-list__item description-list__item--active"
                         onclick="openTabs(event, 'description')">Описание</button>
-                    <button class="description-list__item" onclick="openTabs(event, 'comments')">Отзывы(18)</button>
+                    <button class="description-list__item" onclick="openTabs(event, 'comments')">Отзывы(<span
+                            class="comment-count">0</span>)</button>
                 </div>
 
                 <div id="description" class="description tabContent">
@@ -376,22 +377,12 @@
                 <div id="comments" class="comments tabContent">
 
                     <div class="wrapper">
-                        <div class="comment">
-                            <div>
-                                <div class="comment-first">
-                                    <h3 class="comment-first__name">Гость</h3>
-                                    <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
-                                    <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
-                                    <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
-                                    <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
-                                    <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
-                                </div>
-                                <p class="comment__text">Отличный подарок! Меломанам и не очень посвящается) А так же
-                                    любителям звука, гаджетов и просто почитать аудиокниги в полной изоляции от внешнего
-                                    мира! </p>
-                            </div>
+                        <div class="col">
+                            <div class="comment">
+                                <div class="comment__items">
 
-                            <div>
+
+                                <!-- <div>
                                 <div class="comment-first">
                                     <h3 class="comment-first__name">Вадим</h3>
                                     <img class="comment-first__rating" src="./img/star.svg" alt="Звездочка">
@@ -403,36 +394,47 @@
                                 <p class="comment__text">Отличный подарок! Меломанам и не очень посвящается) А так же
                                     любителям звука, гаджетов и просто почитать аудиокниги в полной изоляции от внешнего
                                     мира! </p>
+                            </div> -->
                             </div>
-
                             <button class="comment__more" type="button">Показать еще отзывы</button>
 
                         </div>
+                    </div>
 
-                        <form action="" class="review">
+                    <div class="col">
+                        <form action="" class="review" onsubmit="return false;">
                             <div class="review-group">
                                 <label class="review__info" for="">ФИО</label>
-                                <input class="review__input" type="text" name="name">
+                                <input class="review__input review__input--name" type="text" name="name">
                             </div>
                             <div class="review-group">
                                 <label class="review__info" for="">E-mail</label>
-                                <input class="review__input" type="email" name="email">
+                                <input class="review__input review__input--email" type="email" name="email">
                             </div>
                             <div class="review-group">
                                 <label class="review__info" for="">Ваш комментарий</label>
-                                <input class="review__input" type="text" name="comment">
+                                <input class="review__input review__input--comment" type="text" name="comment">
                             </div>
                             <button class="review__btn" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
-
-
-
             </div>
+
+
+
+        </div>
         </div>
 
 
+        <div class="container">
+            <div class="modal">
+                <div class="modal-wrapper">
+                    <div class="modal__title">Ваш отзыв отправлен</div>
+                    <div class="modal__icon"><img src="./img/tick.svg" alt="Галочка"></div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -499,9 +501,10 @@
 
     </footer>
 
+    <script src="./js/getReview.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

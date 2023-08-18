@@ -52,3 +52,4 @@ const productSwiper = new Swiper('.purchase-header__swiper', {
   //   prevEl: '.purchase-header__btn--prev'
   },
 });
+

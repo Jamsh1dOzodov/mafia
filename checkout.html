@@ -172,11 +172,11 @@
                             <div class="yourdata-form__background">
                                 <h3 class="yourdata-form__title">Ваши данные</h3>
                                 <p class="yourdata-form__titles">ФИО</p>
-                                <input class="yourdata-form__nameInp" type="text" placeholder="ФИО">
+                                <input class="formInp formInp--name" name="name" type="text" placeholder="ФИО">
                                 <p class="yourdata-form__titles">Номер телефона</p>
-                                <input class="yourdata-form__phoneInp" type="text" placeholder="+7 8 (___) ___-__-__">
+                                <input class="formInp formInp--phone" type="text" placeholder="+7 8 (___) ___-__-__">
                                 <p class="yourdata-form__titles">E-mail</p>
-                                <input class="yourdata-form__emailInp" type="text" placeholder="|">
+                                <input class="formInp formInp--email" type="text" placeholder="|">
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                     <div class="coupon">
                         <div class="coupon-form">
                             <h3 class="coupon-form__title">Купон</h3>
-                            <input class="coupon-form__inp" type="text" placeholder="Введите номер купона">
+                            <input class="formInp formInp--number" type="text" placeholder="Введите номер купона">
                         </div>
                     </div>
                 </div>
@@ -197,17 +197,17 @@
                             <h3 class="delivery-form__title">Доставка</h3>
                             <div class="col col--left">
                                 <p class="delivery-form__titles">Выберите Город</p>
-                                <input class="delivery-form__inp delivery-form__cityInp" type="text"
+                                <input class="formInp formInp--text" type="text"
                                     placeholder="Москва">
                                 <p class="delivery-form__titles">Выберите Дом</p>
-                                <input class="delivery-form__inp delivery-form__homeInp" type="text" placeholder="21">
+                                <input class="formInp formInp--number" type="text" placeholder="21">
                             </div>
                             <div class="col">
                                 <p class="delivery-form__titles">Выберите Улицу</p>
-                                <input class="delivery-form__inp delivery-form__streetInp" type="text"
+                                <input class="formInp formInp--text" type="text"
                                     placeholder="Киквидзе">
                                 <p class="delivery-form__titles">Выберите Квартиру</p>
-                                <input class="delivery-form__inp delivery-form__apartInp" type="text" placeholder="12">
+                                <input class="formInp formInp--number" type="text" placeholder="12">
                             </div>
                         </div>
                     </div>
@@ -217,9 +217,9 @@
                     <div class="payment">
                         <div class="payment-form">
                             <h3 class="payment-form__title">Способ оплаты</h3>
-                            <button class="payment-form__btn payment-form__btn--active">Наличными</button>
-                            <button class="payment-form__btn">VISA/Mastercard</button>
-                            <button class="payment-form__btn">Наложенным платежом</button>
+                            <input class="payment-form__btn payment-form__btn--active" type="button" value="Наличными">
+                            <input class="payment-form__btn" type="button" value="VISA/Mastercard">
+                            <input class="payment-form__btn" type="button" value="Наложенным платежом">
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                         <a href="#">
                             <p class="cart-order__litetext">Продолжить покупки</p>
                         </a>
-                        <button type="button" class="cart-order__btn">Оформить</button>
+                        <button type="button" class="cart-order__btn cart-order__btn--checkout">Оформить</button>
                     </div>
                 </div>
             </div>
