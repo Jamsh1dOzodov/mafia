@@ -1,5 +1,5 @@
 .card {
-    background-color: aqua;
+    background-color: #FFFFFF;
     padding: 20px 20px 11px 20px;
     // .card__description
     &__description {
@@ -13,6 +13,10 @@
             font-size: 14px;
             line-height: 19px;
             font-weight: 500;
+        }
+        //card__description--orange
+        &--orange{
+            color: #D57B1C;
         }
     }
 
@@ -62,6 +66,7 @@
             padding: 10px 20px 10px 20px;
             border-radius: 3px;
             margin-left: 89px;
+            cursor: pointer;
         }
     }
 

@@ -44,7 +44,7 @@
 
     }
 
-    // .header-form__btn
+    // .header__btn
     &__btn {
         position: absolute;
         right: 20px;
@@ -53,6 +53,7 @@
         border: none;
         width: 17px;
         height: 18px;
+        cursor: pointer;
     }
 
     // .header-list
