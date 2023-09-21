@@ -159,7 +159,7 @@ if (checkoutBtn) {
             }
 
             if (input.classList.contains('formInp--coupon')) {
-                regex = /\d{5}/
+                regex = /^[0-9]{5}$/
                 if (input.value.match(regex)) {
                     input.classList.remove('formInp--error')
                     data.coupon = input.value
@@ -170,7 +170,7 @@ if (checkoutBtn) {
             }
 
             if (input.classList.contains('formInp--homeNumber')) {
-                regex = /\d{2}/
+                regex = /^[0-9]{1,4}$/
                 if (input.value.match(regex)) {
                     input.classList.remove('formInp--error')
                     data.homeNumber = input.value
@@ -181,7 +181,7 @@ if (checkoutBtn) {
             }
 
             if (input.classList.contains('formInp--kvartNumber')) {
-                regex = /\d{2}/
+                regex = /^[0-9]{1,4}$/
                 if (input.value.match(regex)) {
                     input.classList.remove('formInp--error')
                     data.kvartNumber = input.value
@@ -222,6 +222,74 @@ if (checkoutBtn) {
 }
 
 
+const persdataBtn = document.querySelector('.persdata-form__btn--save');
+if (persdataBtn) {
+    persdataBtn.addEventListener('click', event => {
+        const formInput = document.querySelectorAll('.persdata-group__input')
+        formInput.forEach(input => {
+            let regex;
+            if (input.classList.contains('persdata-group__input--name')) {
+                regex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+
+            if (input.classList.contains('persdata-group__input--phoneNumber')) {
+                regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+
+            if (input.classList.contains('persdata-group__input--email')) {
+                regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+
+            if (input.classList.contains('persdata-group__input--address')) {
+                regex = /^[A-Za-z-0-99999999]/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+
+            if (input.classList.contains('persdata-group__input--region')) {
+                regex = /^[A-Za-zА-Яа-яЁё\s]{2,}/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+
+            if (input.classList.contains('persdata-group__input--locality')) {
+                regex = /^[A-Za-zА-Яа-яЁё\s]{2,}/
+                if (input.value.match(regex)) {
+                    input.classList.remove('persdata-group__input--error')
+                }
+                else {
+                    input.classList.add('persdata-group__input--error')
+                }
+            }
+        })
+    })
+}
 
 const paymentBtns = document.querySelectorAll('.payment-form__btn')
 paymentBtns.forEach(btn => {

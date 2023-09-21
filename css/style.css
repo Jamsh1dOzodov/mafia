@@ -844,12 +844,15 @@ body {
   margin-bottom: 20px;
 }
 .home-header {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .home-header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.home-header--personal {
+  padding-bottom: 60px;
 }
 .home-sidebar {
   background-color: #FFFFFF;
@@ -908,6 +911,9 @@ body {
   background-color: #D93C47;
   border-radius: 0 2px 2px 0;
   left: 0;
+}
+.home-sidebar--personal {
+  padding: 40px 0 336px 0;
 }
 .home .swiper-pagination-bullet {
   width: 60px;
@@ -1023,6 +1029,11 @@ body {
   padding-bottom: 48px;
 }
 .home .col--catalog {
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.home .col--personal {
   width: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1143,6 +1154,83 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
+}
+.home .persdata {
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+.home .persdata__title {
+  color: #D93C47;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.78px;
+  padding-bottom: 25px;
+}
+.home .persdata-form__btn {
+  margin-top: 30px;
+}
+.home .persdata-form__btn--save {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  padding: 15px 63px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: var(--d, linear-gradient(212deg, #E75B65 -88.04%, #D12C37 130.2%));
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(120, 137, 149, 0.25);
+          box-shadow: 0px 2px 7px 0px rgba(120, 137, 149, 0.25);
+  border: none;
+  margin-right: 30px;
+}
+.home .persdata-form__btn--cancel {
+  color: #12212D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.1px;
+  border: none;
+  opacity: 0.4;
+  background: transparent;
+  cursor: pointer;
+}
+.home .persdata-form__line {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #B7BCC0;
+  margin-top: 30px;
+}
+.home .persdata-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+  margin-top: 15px;
+}
+.home .persdata-group__info {
+  display: block;
+  color: rgba(18, 33, 45, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  margin-bottom: 10px;
+}
+.home .persdata-group__input {
+  padding-left: 20px;
+  outline: none;
+  width: 330px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #B7BCC0;
+  color: rgba(18, 33, 45, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+.home .persdata-group__input--error {
+  border: 1px dashed red;
 }
 
 .checkout .basket .cart-background_color {
