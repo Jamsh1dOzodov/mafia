@@ -120,7 +120,7 @@ body {
   border-radius: 50%;
   color: #FFF;
   text-align: center;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 700;
   line-height: normal;
   padding: 3px 1px 0 2px;
@@ -1231,6 +1231,98 @@ body {
 }
 .home .persdata-group__input--error {
   border: 1px dashed red;
+}
+.home .orders {
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+.home .orders .basket .cart-background_color {
+  padding: 0;
+}
+.home .orders .basket .cart-table {
+  width: 908px;
+}
+.home .orders .basket .cart-table__list .list__title--left {
+  padding-left: 30px;
+  width: 199px;
+}
+.home .orders .basket .cart-table__list .list__title--second {
+  width: 193px;
+}
+.home .orders .basket .cart-table__list .list__title--third {
+  width: 213px;
+}
+.home .orders .basket .cart-table__list .list__title--right {
+  padding-right: 195px;
+  width: 96px;
+}
+.home .orders .basket .cart-table__list .list__text {
+  color: #12212D;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+.home .orders .basket .cart-table__list .list__text--orderNumber {
+  padding-left: 30px;
+}
+.home .orders .basket .cart-table__list .list__text--status {
+  padding: 35px 0;
+  position: relative;
+  z-index: 2;
+}
+.home .orders .basket .cart-table__list .list__text--status::before {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  background: #76D77F;
+  width: 103px;
+  height: 40px;
+  left: -16px;
+  top: 23px;
+  z-index: -1;
+}
+.home .orders .basket .cart-table__list .list__text--inProcess::before {
+  background: #FEA700;
+  width: 121px;
+}
+.home .orders .basket .cart-table__list .list__text--sum {
+  font-size: 16px;
+}
+.home .orders .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 20px;
+}
+.home .orders .sorting__total {
+  color: rgba(18, 33, 45, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  margin-right: 409px;
+}
+.home .orders .sorting__total--bold {
+  color: #12212D;
+}
+.home .orders .sorting-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 30px;
+}
+.home .orders .sorting-status__text {
+  color: rgba(18, 33, 45, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+.home .orders .sorting-status__text--all {
+  color: #12212D;
 }
 
 .checkout .basket .cart-background_color {

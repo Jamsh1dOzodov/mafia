@@ -1,21 +1,24 @@
 .card {
     background-color: #FFFFFF;
     padding: 20px 20px 11px 20px;
+
     // .card__description
     &__description {
         color: #4DA455;
         font-size: 14px;
         line-height: 19px;
         font-weight: 500;
+
         // card__description--red
-        &--red{
+        &--red {
             color: #D0021B;
             font-size: 14px;
             line-height: 19px;
             font-weight: 500;
         }
+
         //card__description--orange
-        &--orange{
+        &--orange {
             color: #D57B1C;
         }
     }

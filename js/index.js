@@ -226,66 +226,72 @@ const persdataBtn = document.querySelector('.persdata-form__btn--save');
 if (persdataBtn) {
     persdataBtn.addEventListener('click', event => {
         const formInput = document.querySelectorAll('.persdata-group__input')
+        let data = {}
         formInput.forEach(input => {
             let regex;
             if (input.classList.contains('persdata-group__input--name')) {
                 regex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.name = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
             }
-
             if (input.classList.contains('persdata-group__input--phoneNumber')) {
                 regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.phoneNumber = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
             }
-
             if (input.classList.contains('persdata-group__input--email')) {
                 regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.email = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
             }
-
             if (input.classList.contains('persdata-group__input--address')) {
                 regex = /^[A-Za-z-0-99999999]/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.address = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
             }
-
             if (input.classList.contains('persdata-group__input--region')) {
                 regex = /^[A-Za-zА-Яа-яЁё\s]{2,}/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.region = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
             }
-
             if (input.classList.contains('persdata-group__input--locality')) {
                 regex = /^[A-Za-zА-Яа-яЁё\s]{2,}/
                 if (input.value.match(regex)) {
                     input.classList.remove('persdata-group__input--error')
+                    data.locality = input.value
                 }
                 else {
                     input.classList.add('persdata-group__input--error')
                 }
+            }
+            if (Object.keys(data).length == 6) {
+                const reviewModal = document.querySelector('.modal')
+                reviewModal.classList.add('modal--active')
             }
         })
     })

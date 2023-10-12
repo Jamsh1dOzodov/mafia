@@ -91,9 +91,9 @@
                     <div class="col">
                         <div class="home-sidebar home-sidebar--personal">
                             <ul class="home-sidebar__list list">
-                                <li class="list__item list__item--active"><a class="list__link"
-                                        href="/personal.html">Личные данные</a></li>
-                                <li class="list__item"><a class="list__link" href="/orders.html">Мои
+                                <li class="list__item"><a class="list__link" href="/personal.html">Личные данные</a>
+                                </li>
+                                <li class="list__item list__item--active"><a class="list__link" href="/orders.html">Мои
                                         заказы</a>
                                 </li>
                                 <li class="list__item"><a class="list__link" href="#">Текущий заказ</a></li>
@@ -102,51 +102,84 @@
                     </div>
 
                     <div class="col col--personal">
-                        <div class="persdata">
-                            <h2 class="persdata__title">Личные данные</h2>
+                        <div class="orders">
+                            <h2 class="persdata__title orders__title">Мои заказы</h2>
+                            <div class="sorting">
+                                <p class="sorting__total">Всего <span class="sorting__total--bold">5 заказов</span></p>
+                                <div class="sorting-status">
+                                    <a href="#" class="sorting-status__text sorting-status__text--all">Все</a>
+                                    <a href="#" class="sorting-status__text">Текущие</a>
+                                    <a href="#" class="sorting-status__text">Завершенные</a>
+                                    <a href="#" class="sorting-status__text">Отмененные</a>
+                                </div>
+                            </div>
+                            <div class="basket">
+                                <div class="cart">
+                                    <div class="cart-background_color background_color">
+                                        <table class="cart-table">
 
-                            <form class="persdata-form" action="" onsubmit="return false;">
-                                <div class="persdata-col">
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">ФИО</label>
-                                        <input class="persdata-group__input persdata-group__input--name" type="text">
-                                    </div>
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">Регион</label>
-                                        <input class="persdata-group__input persdata-group__input--region" type="text">
+                                            <thead class="cart-table__head">
+                                                <tr class="cart-table__list list">
+                                                    <th class="list__title list__title--left">Номер заказа</th>
+                                                    <th class="list__title list__title--second">Дата</th>
+                                                    <th class="list__title list__title--third">Статус заказа</th>
+                                                    <th class="list__title list__title--right">Сумма заказа</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody class="cart-table__body">
+                                                <tr class="cart-table__list list">
+                                                    <td class="list__text list__text--orderNumber">#1221213</td>
+                                                    <td class="list__text list__text--date">13.03.2019</td>
+                                                    <td class="list__text list__text--status list__text--inProcess">В
+                                                        обработке</td>
+                                                    <td class="list__text list__text--sum">123 323 ₽</td>
+                                                    <td class="list__text list__text--x"><a href="#"><img
+                                                                src="./img/X.svg" alt="Крестик"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="cart-table__list list">
+                                                    <td class="list__text list__text--orderNumber">#1221213</td>
+                                                    <td class="list__text list__text--date">13.03.2019</td>
+                                                    <td class="list__text list__text--status">Выполнен</td>
+                                                    <td class="list__text list__text--sum">123 323 ₽</td>
+                                                    <td class="list__text list__text--x"><a href="#"><img
+                                                                src="./img/X.svg" alt="Крестик"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="cart-table__list list">
+                                                    <td class="list__text list__text--orderNumber">#1221213</td>
+                                                    <td class="list__text list__text--date">13.03.2019</td>
+                                                    <td class="list__text list__text--status list__text--inProcess">В
+                                                        обработке</td>
+                                                    <td class="list__text list__text--sum">123 323 ₽</td>
+                                                    <td class="list__text list__text--x"><a href="#"><img
+                                                                src="./img/X.svg" alt="Крестик"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="cart-table__list list">
+                                                    <td class="list__text list__text--orderNumber">#1221213</td>
+                                                    <td class="list__text list__text--date">13.03.2019</td>
+                                                    <td class="list__text list__text--status">Выполнен</td>
+                                                    <td class="list__text list__text--sum">123 323 ₽</td>
+                                                    <td class="list__text list__text--x"><a href="#"><img
+                                                                src="./img/X.svg" alt="Крестик"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="cart-table__list list">
+                                                    <td class="list__text list__text--orderNumber">#1221213</td>
+                                                    <td class="list__text list__text--date">13.03.2019</td>
+                                                    <td class="list__text list__text--status">Выполнен</td>
+                                                    <td class="list__text list__text--sum">123 323 ₽</td>
+                                                    <td class="list__text list__text--x"><a href="#"><img
+                                                                src="./img/X.svg" alt="Крестик"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-
-                                <div class="persdata-col">
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">Номер телефона</label>
-                                        <input class="persdata-group__input persdata-group__input--phoneNumber"
-                                            type="text">
-                                    </div>
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">Населенный пункт</label>
-                                        <input class="persdata-group__input persdata-group__input--locality"
-                                            type="text">
-                                    </div>
-                                </div>
-
-                                <div class="persdata-col">
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">E-mail</label>
-                                        <input class="persdata-group__input persdata-group__input--email" type="email">
-                                    </div>
-                                    <div class="persdata-group">
-                                        <label class="persdata-group__info">Адрес</label>
-                                        <input class="persdata-group__input persdata-group__input--address" type="text">
-                                    </div>
-                                </div>
-
-                                <div class="persdata-form__line"></div>
-                                <button class="persdata-form__btn persdata-form__btn--save"
-                                    type="submit">Сохранить</button>
-                                <button class="persdata-form__btn persdata-form__btn--cancel"
-                                    type="reset">Отменить</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1310,6 +1310,146 @@
         }
     }
 
+    .orders {
+        padding: 30px;
+        background-color: #FFFFFF;
+
+        .basket {
+
+            .cart {
+
+                // cart-background_color
+                &-background_color {
+                    padding: 0;
+                }
+
+                //cart-table
+                &-table {
+                    width: 908px;
+
+                    //cart-table__list
+                    &__list {
+
+                        .list {
+
+                            //list__title
+                            &__title {
+
+                                //list__title--left
+                                &--left {
+                                    padding-left: 30px;
+                                    width: 199px;
+                                }
+
+                                // list__title--second
+                                &--second {
+                                    width: 193px;
+                                }
+
+                                // list__title--third
+                                &--third {
+                                    width: 213px;
+                                }
+
+                                // .list__title--right
+                                &--right {
+                                    padding-right: 195px;
+                                    width: 96px;
+                                }
+                            }
+
+                            //list__date
+                            &__text {
+                                color: #12212D;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: -0.1px;
+
+                                //list__text--orderNumber
+                                &--orderNumber {
+                                    padding-left: 30px;
+                                }
+
+                                //list__text--status
+                                &--status {
+                                    padding: 35px 0;
+                                    position: relative;
+                                    z-index: 2;
+
+                                    &::before {
+                                        position: absolute;
+                                        content: '';
+                                        border-radius: 2px;
+                                        background: #76D77F;
+                                        width: 103px;
+                                        height: 40px;
+                                        left: -16px;
+                                        top: 23px;
+                                        z-index: -1;
+                                    }
+                                }
+
+                                //list__text--inProcess
+                                &--inProcess {
+                                    &::before {
+                                        background: #FEA700;
+                                        width: 121px;
+                                    }
+                                }
+
+                                //list__text--sum
+                                &--sum {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sorting {
+            display: flex;
+            margin: 30px 0 20px;
+
+            //sorting__total
+            &__total {
+                color: rgba(18, 33, 45, 0.70);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.1px;
+                margin-right: 409px;
+
+                //sorting__total--bold
+                &--bold {
+                    color: #12212D;
+                }
+            }
+
+            //sorting-status
+            &-status {
+                display: flex;
+                justify-content: space-between;
+                gap: 0 30px;
+
+                //sorting-status__text
+                &__text {
+                    color: rgba(18, 33, 45, 0.70);
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.1px;
+
+                    //sorting-status__text--all
+                    &--all{
+                        color: #12212D;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .checkout {
