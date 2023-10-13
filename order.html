@@ -93,26 +93,66 @@
                             <ul class="home-sidebar__list list">
                                 <li class="list__item"><a class="list__link" href="/personal.html">Личные данные</a>
                                 </li>
-                                <li class="list__item list__item--active"><a class="list__link" href="/orders.html">Мои
+                                <li class="list__item"><a class="list__link" href="/orders.html">Мои
                                         заказы</a>
                                 </li>
-                                <li class="list__item"><a class="list__link" href="/order.html">Текущий заказ</a></li>
+                                <li class="list__item list__item--active"><a class="list__link" href="/order.html">Текущий заказ</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col col--personal">
-                        <div class="orders">
-                            <h2 class="persdata__title orders__title">Мои заказы</h2>
-                            <div class="sorting">
-                                <p class="sorting__total">Всего <span class="sorting__total--bold">5 заказов</span></p>
-                                <div class="sorting-status">
-                                    <a href="#" class="sorting-status__text sorting-status__text--all">Все</a>
-                                    <a href="#" class="sorting-status__text">Текущие</a>
-                                    <a href="#" class="sorting-status__text">Завершенные</a>
-                                    <a href="#" class="sorting-status__text">Отмененные</a>
+                        <div class="order">
+                            <div class="order-info">
+                                <h3 class="order-info__number">Заказ #1232324</h3>
+                                <div class="order-status">
+                                    <div>
+                                        <p class="order-status__title">Текущий статус</p>
+                                        <p class="order-status__text">Принят</p>
+                                    </div>
+                                    <div>
+                                        <p class="order-status__title">Сумма</p>
+                                        <p class="order-status__text">123 123 ₽</p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="order-option">
+                                <h3 class="order-option__title">Параметры заказа</h3>
+                                <div class="order-option__name">
+                                    <p class="order-status__title">ФИО</p>
+                                    <p class="order-status__text">Гайдук Егор Степанович</p>
+                                </div>
+                                <div class="order-status">
+                                    <div>
+                                        <p class="order-status__title">Номер телефона</p>
+                                        <p class="order-status__text">+7 8(093) 941 12 12</p>
+                                    </div>
+                                    <div>
+                                        <p class="order-status__title">E-mail</p>
+                                        <p class="order-status__text">Gaydukegor@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-delivery">
+                                <h3 class="order-option__title order-delivery__title">Параметры доставки и оплаты</h3>
+                                <div class="order-status">
+                                    <div>
+                                        <p class="order-status__title">Платежная система</p>
+                                        <p class="order-status__text">Наличные</p>
+                                    </div>
+                                    <div>
+                                        <p class="order-status__title">Оплачен</p>
+                                        <p class="order-status__text">Нет</p>
+                                    </div>
+                                </div>
+                                <div class="order-delivery__form">
+                                    <p class="order-status__title">Служба доставки</p>
+                                    <p class="order-status__text">Самовывоз</p>
+                                </div>
+                            </div>
+
                             <div class="basket">
                                 <div class="cart">
                                     <div class="cart-background_color background_color">
@@ -120,60 +160,26 @@
 
                                             <thead class="cart-table__head">
                                                 <tr class="cart-table__list list">
-                                                    <th class="list__title list__title--left">Номер заказа</th>
-                                                    <th class="list__title list__title--second">Дата</th>
-                                                    <th class="list__title list__title--third">Статус заказа</th>
-                                                    <th class="list__title list__title--right">Сумма заказа</th>
+                                                    <th class="list__title list__title--left">Фото</th>
+                                                    <th class="list__title list__title--second">Наименование</th>
+                                                    <th class="list__title list__title--third">Количество</th>
+                                                    <th class="list__title list__title--right">Сумма</th>
                                                 </tr>
                                             </thead>
 
                                             <tbody class="cart-table__body">
                                                 <tr class="cart-table__list list">
-                                                    <td class="list__text list__text--orderNumber">#1221213</td>
-                                                    <td class="list__text list__text--date">13.03.2019</td>
-                                                    <td class="list__text list__text--status list__text--inProcess">В
-                                                        обработке</td>
-                                                    <td class="list__text list__text--sum">123 323 ₽</td>
-                                                    <td class="list__text list__text--x"><a href="#"><img
-                                                                src="./img/X.svg" alt="Крестик"></a>
-                                                    </td>
+                                                    <td class="list__img"><img src="./img/basket_2.svg" alt="Картинка"></td>
+                                                    <td class="list__text">Маска для мафии «Чикаго»</td>
+                                                    <td class="list__amount">5 шт.</td>
+                                                    <td class="list__sum">10000 ₽</td>
                                                 </tr>
+
                                                 <tr class="cart-table__list list">
-                                                    <td class="list__text list__text--orderNumber">#1221213</td>
-                                                    <td class="list__text list__text--date">13.03.2019</td>
-                                                    <td class="list__text list__text--status">Выполнен</td>
-                                                    <td class="list__text list__text--sum">123 323 ₽</td>
-                                                    <td class="list__text list__text--x"><a href="#"><img
-                                                                src="./img/X.svg" alt="Крестик"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="cart-table__list list">
-                                                    <td class="list__text list__text--orderNumber">#1221213</td>
-                                                    <td class="list__text list__text--date">13.03.2019</td>
-                                                    <td class="list__text list__text--status list__text--inProcess">В
-                                                        обработке</td>
-                                                    <td class="list__text list__text--sum">123 323 ₽</td>
-                                                    <td class="list__text list__text--x"><a href="#"><img
-                                                                src="./img/X.svg" alt="Крестик"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="cart-table__list list">
-                                                    <td class="list__text list__text--orderNumber">#1221213</td>
-                                                    <td class="list__text list__text--date">13.03.2019</td>
-                                                    <td class="list__text list__text--status">Выполнен</td>
-                                                    <td class="list__text list__text--sum">123 323 ₽</td>
-                                                    <td class="list__text list__text--x"><a href="#"><img
-                                                                src="./img/X.svg" alt="Крестик"></a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="cart-table__list list">
-                                                    <td class="list__text list__text--orderNumber">#1221213</td>
-                                                    <td class="list__text list__text--date">13.03.2019</td>
-                                                    <td class="list__text list__text--status">Выполнен</td>
-                                                    <td class="list__text list__text--sum">123 323 ₽</td>
-                                                    <td class="list__text list__text--x"><a href="#"><img
-                                                                src="./img/X.svg" alt="Крестик"></a>
-                                                    </td>
+                                                    <td class="list__img"><img src="./img/basket_2.svg" alt="Картинка"></td>
+                                                    <td class="list__text">Маска для мафии «Чикаго»</td>
+                                                    <td class="list__amount">5 шт.</td>
+                                                    <td class="list__sum">10000 ₽</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -182,15 +188,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="modal">
-                <div class="modal-wrapper">
-                    <div class="modal__title">Данные сохнанены</div>
-                    <div class="modal__icon"><img src="./img/tick.svg" alt="Галочка"></div>
                 </div>
             </div>
         </div>
